@@ -6,7 +6,7 @@
       </v-btn>
     </template>
     <v-card>
-      <v-card-title class="headline">Nova Tarefa</v-card-title>
+      <v-card-title class="headline">{{ tarefa.id ? 'Editar Tarefa' : 'Nova Tarefa' }}</v-card-title>
       <v-card-text>
         <v-form ref="form" v-model="formValido">
           <v-text-field

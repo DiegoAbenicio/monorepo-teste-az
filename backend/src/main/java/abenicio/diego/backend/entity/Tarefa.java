@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Data
 @Builder
@@ -24,9 +25,11 @@ public class Tarefa {
 
     @Column(name = "titulo")
     @NotNull
+    @Size(max = 20)
     private String titulo;
 
     @Column(name = "descricao_tarefa")
+    @Size(max = 255)
     private String descricaoTarefa;
 
     @Column(name = "concluida")

@@ -11,5 +11,4 @@ WORKDIR /app
 
 COPY --from=build /app/build/libs/backend-1.jar app.jar
 
-# Comando para rodar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]

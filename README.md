@@ -91,6 +91,16 @@ SPRING_DATASOURCE_PASSWORD=123
 
 ---
 
+## 📗 Swagger
+
+Projeto documentado com o swagger
+
+### 1. Acesso
+
+- **Frontend**: http://localhost:8080/swagger-ui/index.html#/
+
+---
+
 ## 🧪 Testes
 
 - **Backend**: utiliza JUnit para testes unitários.

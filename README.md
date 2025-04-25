@@ -104,3 +104,17 @@ Projeto documentado com o swagger
 ## 🧪 Testes
 
 - **Backend**: utiliza JUnit para testes unitários.
+
+#### Comando para rodar os testes:
+
+```bash
+./gradlew test
+```
+
+- **Front**: utiliza o Jest para fazer testes simples.
+
+#### Comando para rodar os testes:
+
+```bash
+npm run test:unit
+```

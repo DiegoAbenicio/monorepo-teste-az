@@ -108,11 +108,6 @@ export default {
         descricaoTarefa: "",
         realizada: false,
       };
-      this.$nextTick(() => {
-        if (this.$refs.form) {
-          this.$refs.form.resetValidation();
-        }
-      });
     },
     iniciarNovaTarefa(){
       this.$store.commit("tarefas/LIMPAR_TAREFA_SELECIONADA");

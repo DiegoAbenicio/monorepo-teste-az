@@ -97,7 +97,7 @@ Projeto documentado com o swagger
 
 ### 1. Acesso
 
-- **Frontend**: http://localhost:8080/swagger-ui/index.html#/
+- **Link**: http://localhost:8080/swagger-ui/index.html#/
 
 ---
 

@@ -1,14 +1,15 @@
-FROM gradle:7.6-jdk11 AS build
+FROM openjdk:11-jdk-slim AS build
 
 WORKDIR /app
+
 COPY . .
 
-RUN gradle clean build -x test
+RUN chmod +x gradlew && ./gradlew clean build -x test
 
 FROM openjdk:11-jdk-slim
 
 WORKDIR /app
 
-COPY --from=build /app/build/libs/backend-1.jar app.jar
+COPY --from=build /app/build/libs/*.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]

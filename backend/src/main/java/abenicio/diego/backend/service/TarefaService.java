@@ -29,7 +29,7 @@ public class TarefaService {
                                                                   filtrosTarefas.getApenasConcluidas(),
                                                                   filtrosTarefas.getApenasInconcluidas(),
                                                                   pageable);
-        return new PageImpl<>(tarefasPage.stream().map(TarefaDTO::new).collect(Collectors.toList()));
+        return new PageImpl<>(tarefasPage.stream().map(TarefaDTO::new).collect(Collectors.toList()), pageable, tarefasPage.getTotalElements());
     }
 
     public TarefaDTO criarTarefa(TarefaRequest request){
